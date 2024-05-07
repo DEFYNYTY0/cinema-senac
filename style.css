@@ -201,6 +201,7 @@ li:hover {
     transform: scale(1.03);
 
 }
+
 /* iniciando rodapé*/ 
 
 footer {
@@ -216,3 +217,92 @@ color: #ffffff;
 
 }
 
+/* display none para desaparecer a navegação e aparecer apenas para dispositivos moveis */
+
+.footer-navigation {
+     
+display: none;
+
+
+}
+
+.footer-list {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+@media(max-width:768px) {/*tela ter até 768px largura aplica essa regra abaixo*/
+    /*atribuir regras até 768px*/
+    .footer-navigation {
+        /*cria um bloco que ocupa todo espaço horizontal disponível*/
+        display: block;/*vai fazer aparecer a navegação pelo dispositivo*/
+    }
+}
+
+nav {
+
+display: none;
+
+}
+#banner {
+background-position: 40%;
+
+
+}
+
+.trailer-container {
+width: 100%;
+height: 400px;
+display: flex;
+flex-direction: column;
+
+}
+ 
+.content {
+width: 95%; /*largura*/
+display: flex;/*utilizando para utilizar flex-direction*/
+flex-direction: column;/*colocando um elemento em columa*/
+
+
+}
+
+.trailer {
+width: 100%;
+
+
+}
+
+#sinopse {
+width: 95%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+
+
+}
+
+.description {
+width: 100%;
+
+
+}
+
+.button {
+width: 100%;
+margin-top: 30px;
+
+
+}
+
+.cards-content {
+grid-template-columns: 1fr;
+margin-top: 100px;
+}
+
+.card {
+margin-bottom: 30px;
+
+}
